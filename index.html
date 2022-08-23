@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>football player's</title>
+</head>
+<body class="bg-black" >
+    <header class="items-center text-center">
+        <h1 class="text-rose-600 font-bold text-5xl italic mx-auto ">You Can Select Best Five Players</h1>
+        <p class="text-white font-bold text-1xl italic mt-16 mb-16 mx-auto w-3/4 ">Football is a popular game that is raising 
+            its popularity in the field of sports.There are various national and international tournaments
+            that roll out in the game of Football. Check the Top 5 Ranked Football Players List in April 2022.
+            The game has a popular world recognition where it is ranked as one of the top football games.
+            Football is a game that is rising its popularity of the time. Here is a list of the top 5
+            ranked football players in the game of Football in April 2022.</p>
+          
+            <section class="mb-4 grid grid-cols-2 gap-8 mx-auto w-3/4 ">
+            <section>
+                <img src="players/pngegg (3).png" alt="">
+            </section>
+            <section>
+                <img src="players/pngegg 5.png" alt="">
+                
+            </section>
+        </section>  
+            
+    </header>
+    <main>
+        <section class="grid grid-cols-2 gap-4 ">
+        <section class=" w-3/4 mx-auto  ">
+          
+            <div class=" w-full grid grid-cols-3 gap-3	">
+         <!-- player1 -->
+              <div class="card card-compact w-50 bg-base-100 shadow-xl bg-black border border-white-600">
+                <figure><img src="players/Cristiano-Ronaldo.jpg" alt="Shoes" /></figure>
+                <div class="card-body p-0">
+                  <h2 id="shoe1" class="card-title text-white">Cristiano-Ronaldo</h2>
+                  <p class="text-white">36 Goals .  120 Assist</p>
+                  <div class="card-actions justify-center bg-white">
+                    <button onclick="addToCart(this)" id="select-1-btn" class="btn btn-primary ">SELECT </button>
+                  </div>
+                </div>
+              </div>
+              <!-- player2 -->
+              <div class="card card-compact w-50 bg-base-100 shadow-xl bg-black border border-white-600">
+                <figure><img src="players/Lionel-Messi.jpg" alt="Shoes" /></figure>
+                <div class="card-body p-0">
+                  <h2 class="text-white" id="shoe2" class="card-title">Lionel-Messi</h2>
+                  <p class="text-white">36 Goals 120 Assist</p>
+                  <div class="card-actions justify-center bg-white">
+                    <button onclick="addToCart(this)" id="select-2-btn" class="btn btn-primary">SELECT </button>
+                  </div>
+                </div>
+              </div>
+              <!-- player3 -->
+              <div class="card card-compact w-50 bg-base-100 shadow-xl bg-black border border-white-600">
+                <figure><img src="players/Neymar-jr-salary.jpg" alt="Shoes" /></figure>
+                <div class="card-body p-0">
+                  <h2 class="text-white" id="shoe3" class="card-title">Neymar-jr-salary</h2>
+                  <p class="text-white">36 Goals 120 Assist</p>
+                  <div class="card-actions justify-center bg-white">
+                    <button onclick="addToCart(this)" id="select-3-btn" class="btn btn-primary">SELECT </button>
+                  </div>
+                </div>
+              </div>
+              <!-- player4 -->
+
+              <div class="card card-compact w-50 bg-base-100 shadow-xl bg-black border border-white-600">
+                <figure><img src="players/Serge-Gnabry.jpg" alt="Shoes" /></figure>
+                <div class="card-body p-0">
+                  <h2 class="text-white" id="shoe4" class="card-title">Serge-Gnabry</h2>
+                  <p class="text-white">36 Goals 120 Assist</p>
+                  <div class="card-actions justify-center bg-white">
+                    <button onclick="addToCart(this)" id="select-4-btn" class="btn btn-primary">SELECT </button>
+                  </div>
+                </div>
+              </div>
+              <!-- player5 -->
+              <div class="card card-compact w-50 bg-base-100 shadow-xl bg-black border border-white-600">
+                <figure><img src="players/Thomas-Muller.jpg" alt="Shoes" /></figure>
+                <div class="card-body p-0">
+                  <h2 class="text-white" id="shoe5" class="card-title">Thomas-Muller</h2>
+                  <p class="text-white">36 Goals 120 Assist</p>
+                  <div class="card-actions justify-center bg-white">
+                    <button onclick="addToCart(this)" id="select-5-btn" class="btn btn-primary">SELECT </button>
+                  </div>
+                </div>
+              </div>
+              <!-- player6 -->
+              <div class="card card-compact w-50 bg-base-100 shadow-xl bg-black border border-white-600">
+                <figure><img src="players/Mohamed-Salah.jpg" alt="Shoes" /></figure>
+                <div class="card-body p-0">
+                  <h2 class="text-white" id="shoe6" class="card-title">Mohamed-Salah</h2>
+                  <p class="text-white">36 Goals 120 Assist</p>
+                  <div class="card-actions justify-center bg-white">
+                    <button onclick="addToCart(this)" id="select-6-btn" class="btn btn-primary">SELECT </button>
+                  </div>
+                </div>
+              </div>
+
+
+              </div>       
+        </section>
+        <section class=" w-3/4 mx-auto mb-40">
+            <div class="text-center justify-center bg-black gap-4 ">
+                <p class="text-white">Quantity:<span id="total-quantity">0</span></p>
+                  <h1 class="font-bold text-2xl text-white mb-2">Selected - V</h1>
+                 
+                  <div>
+                      <div class="overflow-x-auto">
+                          <table class="table w-full">
+                            <!-- head -->
+                            <thead>
+                              <tr>
+                                <th></th>
+                                <th>Name</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody id="cartProd">
+                           
+                            </tbody>
+                          </table>
+                        </div>
+                  </div>
+    
+                  <div class="text-center justify-center gap-4">
+                   
+                    <h1 class="font-bold text-2xl text-white">Budget</h1><br><br>
+                   
+                   <p class="text-white">Per Player <input class="text-black" id="calculate-input" type="text" name="" id=""></p><br>
+                   <button id="calculate-button" class="bg-sky-700 text-white p-2 rounded">Calculate</button><br><br>
+                   <p  class="text-white">Player Expenses: <span id="player-expensesId">0</span></p><br><br>
+                   <p class="text-white">Manager <input id="manager-input" class="text-black" type="text" name="" id=""> </p><br><br>
+                   <p class="text-white">Coach <input id="coach-input" class="text-black" type="text" name="" id=""> </p><br>
+                   <button id="calculate-totalId" class="bg-sky-700 text-white p-2 rounded">Calculate Total</button><br><br>
+                   <p class="text-white">Total:$<span id="get-total-cost" class="text-rose-600">0</span></p>
+                   
+                </div>
+    
+              </div>
+        </section>
+    </section>
+    </main>
+    <footer>
+        <h2 class="text-white bg-black text-1xl mx-auto w-1/2 pb-10  text-center border-t-4 border-white-500">Copyright @ 2022 All Rights Reserved</h2>
+    </footer>
+    <script>
+        const cartArray=[];
+
+        function display(cartProduc){
+               
+            const tableBody =document.getElementById('cartProd')
+           tableBody.innerHTML='';
+            for(let i=0; i< cartProduc.length; i++){ 
+                const name=cartArray[i].productName;
+                const tr=document.createElement('tr');
+
+                tr.innerHTML = `
+                <th>${i+1}</th>
+                <td>${name}</td>
+                
+                `
+                tableBody.appendChild(tr);
+            }
+    
+        }
+
+
+        function getTotalQuantity(){
+          const totalQuantity=document.getElementById('total-quantity');
+          const quantityString=totalQuantity.innerText;
+          const totalQuantityNum=parseInt(quantityString);
+          const tot=totalQuantityNum+1;
+        
+         if(totalQuantityNum>=0){
+          return totalQuantityNum;
+         }
+         
+         ////////////////////tot 
+          totalQuantity.innerText=tot;
+          return tot;
+}
+
+        function addToCart(element){
+            const totalQuantityNum=  getTotalQuantity();
+            element.disabled=true;  
+            const productName=element.parentNode.parentNode.children[0].innerText;
+          
+           const productObj={
+            productName:productName
+           }
+           cartArray.push(productObj);
+           document.getElementById('total-quantity').innerText=cartArray.length;
+           const count=cartArray.length;
+           const countNum=parseInt(count);
+
+         const quantit=document.getElementById('total-quantity');
+      
+         
+         if(countNum>5){
+            if(totalQuantityNum==5){
+               
+                alert('Quntity has not selected');
+               
+         }
+            alert('Player limited');
+            element.disabled=false;
+            
+            return;
+          }
+         quantit.innerText= countNum;
+           display(cartArray);
+        }
+    
+        function getPayPerPlayer(){
+         
+            const tot= getTotalQuantity();
+            const calculateInput=document.getElementById('calculate-input');
+            const calculateStringInput =calculateInput.value;
+            const calculateInputNumber=parseInt(calculateStringInput);
+            
+            const calTotalPlayerCost=tot*calculateInputNumber;
+         
+            if(isNaN(calTotalPlayerCost)){
+              alert('please write a number')
+              return;
+            }
+            const playerExpensesId=document.getElementById('player-expensesId');
+            playerExpensesId.innerText=calTotalPlayerCost;  
+            return calTotalPlayerCost;
+          };
+
+          document.getElementById('calculate-button').addEventListener('click',function(){
+             getPayPerPlayer();
+         
+
+          });
+
+          document.getElementById('calculate-totalId').addEventListener('click',function(){
+            const calculateManagerInput=document.getElementById('manager-input');
+            const calculateManagerStringInput =calculateManagerInput.value;
+            const calculateManagerInputNumber=parseInt(calculateManagerStringInput);
+          
+           const calculateCoachInput=document.getElementById('coach-input');
+            const calculateCocheStringInput =calculateCoachInput.value;
+            const calculateCocheInputNumber=parseInt(calculateCocheStringInput);
+            
+            const calTotalPlayerCost= getPayPerPlayer();
+            const totalCalculation=calTotalPlayerCost+calculateManagerInputNumber+calculateCocheInputNumber;
+            if(isNaN(totalCalculation)){
+              alert('please write a number');
+               return ;
+            }
+            
+            const getTotalCost=document.getElementById('get-total-cost');
+            getTotalCost.innerText=totalCalculation;
+          })
+    </script>
+</body>
+</html>
